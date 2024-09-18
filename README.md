@@ -2,9 +2,9 @@
 
 **Overview**
 
-This repository contains MATLAB codes developed for two subsequent papers on distance estimation in molecular communication (MC) systems. The first paper focuses on machine learning-based distance estimation methods, while the second paper introduces a novel Fluid Dynamics-based Distance Estimation (FDDE) algorithm. The codes in this repository are primarily from the FDDE paper, with the main components from the machine learning-based distance estimation methods also included for comparison purposes. The code file names correspond to the figures in the FDDE paper (Figures 4-8).
+This repository contains MATLAB codes developed for two subsequent papers on distance estimation in molecular communication (MC) systems and the related dataset. The first paper focuses on machine learning-based distance estimation methods, while the second paper introduces a novel Fluid Dynamics-based Distance Estimation (FDDE) algorithm. The codes in this repository are primarily from the FDDE paper, with the main components from the machine learning-based distance estimation methods also included for comparison purposes. The code file names correspond to the figures in the FDDE paper (Figures 4-8). 
 
-Additionally, the repository includes data files for flow rate measurements (Flow_Rate_Data.xlsx) and distance estimation measurements (T21.mat).
+Additionally, the repository includes data files for flow rate measurements (Flow_Rate_Data.xlsx), distance estimation measurements in the Raw_Data folder, and extracted features of these data (T21.mat).
 
 **Citation**
 
@@ -35,9 +35,13 @@ MATLAB code files corresponding to the figures in the FDDE paper, simulating the
 Experimental data validation is included.
 Machine Learning-based Distance Estimation:
 Main components from the first paper on machine learning-based distance estimation, included for comparison with the FDDE approach.
-Data Files:
+
+**Data Files:**
 Flow_Rate_Data.xlsx: Contains flow rate measurements used to estimate the flow rate.
 T21.mat: Contains distance estimation measurements used in the simulations.
+Raw_Data Folder: Contains the raw data files which are the collected signals by using the experimental setup, which consists of an electrical sprayer as the transmitter, liquid ethanol molecules as the communication molecules, and an MQ3 sensor-based receiver. The raw data includes 55 measurements which are the measured signals by the receiver for varying distances between 100-200 cm and for an emission time of T_e = 0.25 s.
+The format of the data file names is as follows: 
+Data_100_1_0.25.mat where 100 shows the distance in cm between the transmitter and receiver, 1 is the measurement number, and 0.25 is the transmitter's emission time in seconds.
 
 **Results**
 
